@@ -28,3 +28,4 @@ rehab_platform/models/imu/classifier_ready.csv
 # system/logs
 .DS_Store
 *.log
+.codegraph/

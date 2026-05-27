@@ -1,19 +1,19 @@
 # Codex Instructions for OrthoScan AI
 
-This project uses Taste Skill for better frontend/UI design.
+Use the Superpower plugin while working.
 
-Before making frontend or dashboard changes, inspect:
-- tools/taste-skill/skills/taste-skill/SKILL.md
-- tools/taste-skill/skills/gpt-tasteskill/SKILL.md
-- tools/taste-skill/skills/redesign-skill/SKILL.md
+Use CodeGraph before editing:
+- Start by asking CodeGraph for project structure and important symbols.
+- Use CodeGraph to inspect FastAPI routes, React components, IMU pipeline functions, and model-loading logic.
+- Use normal file reading only after CodeGraph points to the relevant files.
 
-Use these skills when improving:
-- medical dashboard UI
-- spacing and layout
-- typography
-- animations
-- visual hierarchy
-- responsive design
+Important areas:
+- api/main.py
+- rehab_platform/core/imu_pipeline.py
+- frontend/src/App.jsx
+- rehab_platform/SETUP.md
 
-Keep the OrthoScan AI style clean, medical, modern, and easy to understand.
-Do not remove backend/ML/IMU logic unless the task asks for it.
+Do not commit:
+- .codegraph/
+- node_modules/
+- large CSV/ZIP/model artifacts unless explicitly required.
